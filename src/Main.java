@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
-import Model.Customer;
-import Model.Pizza;
+import Model.*;
 import Service.PizzaService;
 
 public class Main {
