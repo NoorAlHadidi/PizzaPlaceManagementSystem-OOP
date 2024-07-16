@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Model/Model.iml" filepath="$PROJECT_DIR$/Model/Model.iml" />
       <module fileurl="file://$PROJECT_DIR$/PizzaSystem.iml" filepath="$PROJECT_DIR$/PizzaSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Service/Service.iml" filepath="$PROJECT_DIR$/Service/Service.iml" />
     </modules>
   </component>
 </project>

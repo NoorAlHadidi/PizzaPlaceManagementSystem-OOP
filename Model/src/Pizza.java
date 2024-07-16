@@ -1,3 +1,5 @@
+import java.util.Optional;
+
 public abstract class Pizza implements BakeInterface {
     String name;
     String size;
@@ -21,8 +23,8 @@ public abstract class Pizza implements BakeInterface {
     public String getSize() {
         return this.size;
     }
-    public Customer getOrderedBy() {
-        return orderedBy;
+    public Optional<Customer> getOrderedBy() {
+        return Optional.ofNullable(this.orderedBy);
     }
     public void setOrderedBy(Customer customer) {
         this.orderedBy = customer;
