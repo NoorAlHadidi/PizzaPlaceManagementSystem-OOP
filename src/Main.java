@@ -1,7 +1,8 @@
 import java.util.Scanner;
-import Interface.PizzaInterface;
+
 import Model.Customer;
 import Model.Pizza;
+import Service.PizzaService;
 
 public class Main {
     public static void main(String[] args) {

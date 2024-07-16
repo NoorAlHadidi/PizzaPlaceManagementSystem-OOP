@@ -9,6 +9,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Service" />
     <orderEntry type="module" module-name="Model" />
-    <orderEntry type="module" module-name="Interface" />
   </component>
 </module>
