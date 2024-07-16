@@ -64,10 +64,12 @@ public class PizzaService implements PizzaInterface {
         }
         for (Pizza tempPizza : pizzas) {
             if ((tempPizza.getOrderedBy()).isPresent()) {
+                System.out.println("Cannot place order, no available pizza exists.");
                 continue;
             }
             else {
                 if (!tempPizza.getSize().equals(size)) {
+                    System.out.println("Cannot place order, no available pizza exists.");
                     continue;
                 }
                 else {
@@ -78,6 +80,7 @@ public class PizzaService implements PizzaInterface {
                             break;
                         }
                         else {
+                            System.out.println("Cannot place order, no available pizza exists.");
                             continue;
                         }
                     }
@@ -88,6 +91,7 @@ public class PizzaService implements PizzaInterface {
                             break;
                         }
                         else {
+                            System.out.println("Cannot place order, no available pizza exists.");
                             continue;
                         }
                     }
@@ -98,6 +102,7 @@ public class PizzaService implements PizzaInterface {
                             break;
                         }
                         else {
+                            System.out.println("Cannot place order, no available pizza exists.");
                             continue;
                         }
                     }

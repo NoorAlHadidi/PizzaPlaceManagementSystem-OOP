@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         //adding pizzas
         int totalPizzas;
-        System.out.println("Enter the number of pizzas you want to bake");
+        System.out.println("Enter the number of pizzas you want to bake:");
         totalPizzas = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < totalPizzas; i++) {
             Pizza newPizza;
