@@ -1,3 +1,4 @@
+package Model;
 public class ChickenPizza extends Pizza{
     public ChickenPizza(String size) {
         super(size);

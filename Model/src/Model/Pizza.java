@@ -1,3 +1,5 @@
+package Model;
+import Interface.BakeInterface;
 import java.util.Optional;
 
 public abstract class Pizza implements BakeInterface {

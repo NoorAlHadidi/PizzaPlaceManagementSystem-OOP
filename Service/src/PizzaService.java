@@ -1,8 +1,13 @@
+import Interface.PizzaInterface;
+import Model.*;
+
 import java.util.ArrayList;
-public class PizzaService implements PizzaInterface{
+public class PizzaService implements PizzaInterface {
     ArrayList<Pizza> pizzas;
+    ArrayList<Customer> customers;
     public PizzaService() {
         pizzas = new ArrayList();
+        customers = new ArrayList();
     }
     @Override
     public void bakePizza(int sizeNum, int typeNum) {
@@ -44,6 +49,9 @@ public class PizzaService implements PizzaInterface{
     }
     @Override
     public void orderPizza(int sizeNum, int typeNum, Customer customer) {
+        if (!customers.contains(customer)) {
+            customers.add(customer);
+        }
         String size;
         if (sizeNum == 1) {
             size = "Small";
@@ -65,7 +73,8 @@ public class PizzaService implements PizzaInterface{
                 else {
                     if (typeNum == 1) {
                         if (tempPizza instanceof ChickenPizza) {
-                            tempPizza.setOrderedBy(customer);
+                            tempPizza.setOrderedBy(customers.get(customers.indexOf(customer)));
+                            System.out.println("Pizza ordered successfully!");
                             break;
                         }
                         else {
@@ -74,7 +83,8 @@ public class PizzaService implements PizzaInterface{
                     }
                     else if (typeNum == 2) {
                         if (tempPizza instanceof MeatPizza) {
-                            tempPizza.setOrderedBy(customer);
+                            tempPizza.setOrderedBy(customers.get(customers.indexOf(customer)));
+                            System.out.println("Pizza ordered successfully!");
                             break;
                         }
                         else {
@@ -83,7 +93,8 @@ public class PizzaService implements PizzaInterface{
                     }
                     else {
                         if (tempPizza instanceof VeggiePizza) {
-                            tempPizza.setOrderedBy(customer);
+                            tempPizza.setOrderedBy(customers.get(customers.indexOf(customer)));
+                            System.out.println("Pizza ordered successfully!");
                             break;
                         }
                         else {
