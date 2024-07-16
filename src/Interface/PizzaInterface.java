@@ -1,4 +1,3 @@
-package Interface;
 import Model.Customer;
 
 public interface PizzaInterface {

@@ -1,4 +1,5 @@
 package Model;
+
 public class MeatPizza extends Pizza{
     public MeatPizza(String size) {
         super(size);
