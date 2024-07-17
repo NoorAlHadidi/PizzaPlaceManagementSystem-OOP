@@ -12,7 +12,7 @@ public abstract class Pizza implements BakeInterface {
     }
     @Override
     public void makeDough() {
-        System.out.println("Making dough for " + this.name + "pizza.");
+        System.out.println("Making dough for " + this.name + " pizza.");
     }
     public abstract void addToppings();
     @Override

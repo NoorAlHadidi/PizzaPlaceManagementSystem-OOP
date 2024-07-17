@@ -1,5 +1,4 @@
 package Service;
-
 import Interface.PizzaInterface;
 import Model.*;
 
@@ -47,6 +46,9 @@ public class PizzaService implements PizzaInterface {
                 newPizza = new VeggiePizza("Large");
             }
         }
+        newPizza.makeDough();
+        newPizza.addToppings();
+        newPizza.putInOven();
         pizzas.add(newPizza);
     }
     @Override
